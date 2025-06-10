@@ -6,7 +6,6 @@
  *
  * @return {Object[]}
  */
-
 function transformStateWithClones(state, actions) {
   const stateHistory = [];
   let copyVersion = { ...state };
@@ -28,5 +27,4 @@ function transformStateWithClones(state, actions) {
 
   return stateHistory;
 }
-
 module.exports = transformStateWithClones;
